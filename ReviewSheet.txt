@@ -1,0 +1,232 @@
+Common data structures
+
+Linked List
+Implementation:
+Linear collection of node objects, typically each node contains data and pointer to 
+the next node.
+Flavors of Linked Lists:
+Single, doubly, circular, etc.
+
+When to use:
+Dont need random access, easy insertion, dont know size of list
+
+Pros
+Easy insertion/removal, dont need to reallocate or reorganize structure because data
+not stored contiguously on memory
+Can dynamically grow or shrink.
+
+Cons
+No random access
+No efficient indexing
+require more storage size than arrays
+Reverse traversing hard
+
+
+Space and Time complexity
+		Access Search Insert Delete
+Avg:    O(n)   O(n)   O(1)   O(1)
+Worst:  O(n)   O(n)   O(1)   O(1)
+
+
+Arrays
+Implementation:
+Collection of elements usually ordered by some sort of index
+
+When to Use:
+
+Pros
+Easy indexing
+Random access to elements
+Easy to iterate
+Smaller memory space than linked list
+
+Cons
+Need to know size to allocate
+Cannot easily dynamically grow/shrink
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O(1)   O(n)   O(n)   O(n)
+Worst:  O(1)   O(n)   O(n)   O(n)
+
+
+
+Trees
+Implementation:
+Collection of nodes/vertices with directed edges but no cycles
+Tree specific terminology:
+Root - top node of the tree
+Child - node connected directly below in hierarchy
+Parent - node connected above in hierarchy
+Descendent - child node reachable from parent
+Ancestor - parent node reachable from child
+Leaf - Node with no children
+Edge - connection between nodes
+Subtree - node and all descendents in a tree
+
+When to Use:
+Depends on flavor
+Pros
+Generally fast and flexible search and update
+Cons
+
+Binary Trees
+Implementation:
+Tree where each node has up to 2 children, typically ordered where left nodes are 
+smaller than parent and right nodes are larger
+Flavors of Binary trees:
+Binary Search Tree, Heaps, Syntax trees, Binary Tries
+
+When to Use:
+Usually used over N-ary trees as Binary trees are easier to use
+
+Pros
+Fast search
+Flexible insertion
+
+Cons
+Need to keep balanced to keep performance up
+Space storage is higher
+
+Space and Time Complexity (BST)
+		Access   Search   Insert   Delete
+Avg:    O(logn)  O(logn)  O(logn)  O(logn)
+Worst:  O(n)     O(n)     O(n)     O(n)
+
+
+Tries aka digital tree, radix tree, prefix tree, retrieval tree
+Implementation:
+Tries generally used to store string sequences, each node represents word or prefix, root is empty string, nodes 1 edge away represent prefix of length 1, nodes 2 edges away represent prefixs of length 2, etc. 
+
+When to Use:
+Useful for string problems/retrieving sequences. Real life examples: predictive text, auto-complete, 
+Pros
+lookup time is faster in worst case, length of the string
+no collisions of keys
+
+Cons
+slower access than hash tables
+can require more space
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O(n)   O(n)   O(n)   O( )
+Worst:  O(n)   O(n)   O(n)   O( )
+
+Space: O(n*m), n number of strings, m biggest length of string
+
+Stacks
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+
+Queues
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+
+Lists
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+
+
+Vectors
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+
+
+Maps
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+HashMap
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+HashTable
+Implementation:
+
+
+When to Use:
+
+Pros
+
+Cons
+
+Space and Time Complexity
+		Access Search Insert Delete
+Avg:    O( )   O()    O( )   O( )
+Worst:  O( )   O( )   O( )   O( )
+
+Common Algorithms
+
+
+
